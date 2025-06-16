@@ -21,11 +21,11 @@ body{
 img[alt="plant"]{
     display: block;
     width: 45em;
-    height:75em;
+    height:77em;
 }
 .logo{
     display: flex;
-    background-color: black;
+    background-color: rgb(17, 36, 1);
     opacity: 0.6;
     height: 12em;
     position: absolute;
@@ -47,12 +47,14 @@ img[alt=logo]{
     display: block;
 }
 header{
-    background-color: lightgray;
+    background-color: #E6F8B2;
+    padding: 3em;
+    padding-top: 9em;
+    padding-right: 15em;
 }
 
 h1{
-    height: 12em;
-    padding: 2em;
+    margin-bottom: 1em;
 }
 
 /*Form*/
@@ -60,7 +62,7 @@ form{
     padding: 3em;
 }
 legend{
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 1em;
 }
 .password,
@@ -82,9 +84,11 @@ label{
 }
 
 /*Validation*/
+input:invalid,
 input:required:invalid{
     border: 1px solid red;
 }
+input:valid,
 input:required:valid{
     border: 1px solid green;
 }
@@ -93,12 +97,13 @@ input:focus{
     border: 5px solid lightblue;
 }
 
+
 /*Footer*/
 footer{
     padding-left: 3em;
-    background-color: lightgray;
+    background-color: #E6F8B2;
     padding-top: 2em;
-    height: 22.4em;
+    height: 25.3em;
 }
 button{
     font-size: 25px;
@@ -108,10 +113,13 @@ button{
     border-radius: 7px;
     border: none;
     color: white;
-    background-color: green;
+    background-color: rgb(17, 36, 1);
 }
 .login{
     font-size: 25px;
+}
+a{
+    color: rgb(41, 154, 48);
 }
 a:hover{
     text-decoration: none;
