@@ -1,0 +1,118 @@
+/*Boxsizing model*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/*remove default margin*/
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+}
+/* Left side*/
+.left-side{
+    display: block;
+    width: 45em;
+    height:75em;
+}
+img[alt="plant"]{
+    display: block;
+    width: 45em;
+    height:75em;
+}
+.logo{
+    display: flex;
+    background-color: black;
+    opacity: 0.6;
+    height: 12em;
+    position: absolute;
+    top:15em;
+    width: 45em;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+img[alt=logo]{
+    height: 100%;
+}
+.ODIN{
+    font-size: 7em;
+    color: white;
+}
+/*Right side*/
+.right-side{
+    display: block;
+}
+header{
+    background-color: lightgray;
+}
+
+h1{
+    height: 12em;
+    padding: 2em;
+}
+
+/*Form*/
+form{
+    padding: 3em;
+}
+legend{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+.password,
+.numbers,
+.names{
+    display: flex;
+    margin-top: 2em;
+}
+
+input{
+    margin-right: 4em;
+    height: 1.5em;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    font-size: 25px;
+}
+label{
+    font-size: 1.5em;
+}
+
+/*Validation*/
+input:required:invalid{
+    border: 1px solid red;
+}
+input:required:valid{
+    border: 1px solid green;
+}
+input:required:focus,
+input:focus{
+    border: 5px solid lightblue;
+}
+
+/*Footer*/
+footer{
+    padding-left: 3em;
+    background-color: lightgray;
+    padding-top: 2em;
+    height: 22.4em;
+}
+button{
+    font-size: 25px;
+    height: 2.5em;
+    width: 10em;
+    margin-bottom: 2em;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background-color: green;
+}
+.login{
+    font-size: 25px;
+}
+a:hover{
+    text-decoration: none;
+}
