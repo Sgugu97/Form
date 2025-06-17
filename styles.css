@@ -1,3 +1,15 @@
+@font-face {
+    font-family: norseBold;
+    src: url(font/norse/Norsebold.otf);
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url(font/source-sans-pro/SourceSansPro-Regular.otf);
+}
+@font-face {
+    font-family: SourceSansPro-Bold;
+    src: url(font/source-sans-pro/SourceSansPro-Bold.otf);
+}
 /*Boxsizing model*/
 *,
 *::before,
@@ -11,6 +23,7 @@
 
 body{
     display: flex;
+    font-family: SourceSansPro, sans-serif;
 }
 /* Left side*/
 .left-side{
@@ -39,7 +52,8 @@ img[alt=logo]{
     height: 100%;
 }
 .ODIN{
-    font-size: 7em;
+    font-family: norseBold, sans-serif;
+    font-size: 9em;
     color: white;
 }
 /*Right side*/
@@ -63,7 +77,9 @@ form{
 }
 legend{
     font-size: 2em;
-    margin-bottom: 1em;
+}
+.req{
+    font-family: SourceSansPro-Bold;
 }
 .password,
 .numbers,
@@ -81,16 +97,17 @@ input{
 }
 label{
     font-size: 1.5em;
+    font-family: SourceSansPro-Bold, sans-serif;
 }
 
 /*Validation*/
 input:invalid,
 input:required:invalid{
-    border: 1px solid red;
+    border: 2px solid red;
 }
-input:valid,
+
 input:required:valid{
-    border: 1px solid green;
+    border: 2px solid green;
 }
 input:required:focus,
 input:focus{
@@ -103,7 +120,7 @@ footer{
     padding-left: 3em;
     background-color: #E6F8B2;
     padding-top: 2em;
-    height: 25.3em;
+    height: 23.6em;
 }
 button{
     font-size: 25px;
